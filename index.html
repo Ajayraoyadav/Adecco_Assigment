@@ -12,19 +12,38 @@
       src="https://kit.fontawesome.com/5428de7a15.js"
       crossorigin="anonymous"
     ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.min.js"
+      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(document).ready(function () {
+        $('#menubtn').click(function () {
+          $('#right_navbar ul').toggleClass('showMenu');
+          $('#menuicon').toggle();
+          $('#closeicon').toggle();
+        });
+      });
+    </script>
     <title>Adecco</title>
   </head>
   <body>
     <!-- Navbar -->
-
     <div id="navbar">
       <div id="left_navbar">
         <img src="./Images/img_1.png" alt="" />
       </div>
       <div id="right_navbar">
-        <a href="">About us</a>
-        <a href="">Recruitment Process</a>
-        <a href="">Apply</a>
+        <ul id="menu">
+          <li><a href="">About us</a></li>
+          <li><a href="">Recruitment Process</a></li>
+          <li><a href="">Apply</a></li>
+        </ul>
+        <button id="menubtn" type="button">
+          <i class="fa-solid fa-bars" id="menuicon"></i>
+          <i class="fa-solid fa-xmark" id="closeicon"></i>
+        </button>
       </div>
     </div>
 
@@ -58,7 +77,7 @@
           fringilla nunc ut velit porta cursus.
         </p>
       </div>
-      <div id="aboutus_vedio">
+      <div id="aboutus_video">
         <iframe
           src="https://www.youtube.com/embed/Cq8IzGCQLuE"
           title="YouTube video player"
@@ -197,7 +216,7 @@
     <!-- About you -->
 
     <div id="middle_about_us" style="margin-top: 100px">
-      <div id="aboutus_vedio">
+      <div id="aboutus_video">
         <img id="img_2styles" src="./Images//img_2.png" />
       </div>
       <div id="aboutus">
