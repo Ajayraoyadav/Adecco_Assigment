@@ -123,7 +123,76 @@ body {
   color: white;
   border-radius: 30px;
 }
-@media screen and (max-width: 400px) {
+
+#typicaltype {
+  text-align: center;
+  padding: 50px;
+  background-color: #accc69;
+  color: white;
+  font-weight: 700;
+  border-radius: 10px;
+}
+
+#vacancies_at_atos {
+  background-color: #f2f2f2;
+  margin-top: 50px;
+  text-align: center;
+}
+#vacancies_at_atos1 {
+  padding: 50px;
+}
+
+#applynow_1 {
+  color: white;
+  background-color: #accc69;
+  padding: 20px;
+  border-radius: 10px;
+}
+#vacancies_at_atos_grid_div {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+#encirc > img {
+  width: 100%;
+}
+#footer {
+  margin-top: -12px;
+  background-color: #273134;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+#right_footer a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  font-size: 20px;
+  margin-left: 20px;
+}
+
+#middle_top {
+  padding: 50px;
+  text-align: center;
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNUftOU9_79z3Z4r__wmAscEWDdE2ZWLzAvQ&usqp=CAU');
+}
+#maindivbutton {
+  border: none;
+  color: black;
+  background-color: white;
+  border-radius: 10px;
+  font-size: 20px;
+  padding: 10px;
+  cursor: pointer;
+}
+#pmaindivp {
+  color: white;
+  font-size: 20px;
+}
+#middle_top > img {
+  width: 30%;
+}
+@media screen and (max-width: 420px) {
   #middle_about_us {
     display: flex;
     flex-direction: column;
@@ -154,5 +223,19 @@ body {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     margin-left: 80px;
+  }
+  #vacancies_at_atos_grid_div {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+  }
+  #footer {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  #right_footer {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 30px;
   }
 }
